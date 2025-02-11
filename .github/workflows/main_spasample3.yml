@@ -59,6 +59,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'SpaSample3'
-          slot-name: 'Production'
-          package: .
+          package: ./dist/spa-sample-angular-app
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_95B713F8192549688BAFE8DF524819DA }}
